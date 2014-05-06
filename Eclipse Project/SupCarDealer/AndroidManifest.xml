@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.supinfo.supcardealer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.supinfo.supcardealer.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.supinfo.supcardealer.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.supinfo.supcardealer.CarActivity"
+            android:label="@string/title_activity_car" >
+        </activity>
+        <activity
+            android:name="com.supinfo.supcardealer.CarsActivity"
+            android:label="@string/title_activity_cars" >
+        </activity>
+        <activity
+            android:name="com.supinfo.supcardealer.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.supinfo.supcardealer.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.supinfo.supcardealer.AddCarActivity"
+            android:label="@string/title_activity_add_car" >
+        </activity>
+        <activity
+            android:name="com.supinfo.supcardealer.EditCarActivity"
+            android:label="@string/title_activity_edit_car" >
+        </activity>
+        <activity
+            android:name="com.supinfo.supcardealer.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="com.supinfo.supcardealer.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile" >
+        </activity>
+    </application>
+
+</manifest>

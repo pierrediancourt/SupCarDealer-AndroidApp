@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    android:background="@android:color/white">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical" >
+           
+           <TextView
+               android:id="@+id/pageTitle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="top"
+               android:text="@string/main_page_title" 
+               android:textStyle="bold"
+               android:textSize="20sp"/>
+
+           <Button
+               android:id="@+id/register"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/btn_register"
+               android:onClick="onClickRegister" />
+
+           <Button
+               android:id="@+id/login"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/btn_login"
+               android:onClick="onClickLogin" />
+
+           <Button
+               android:id="@+id/profile"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/btn_profile"
+               android:visibility="gone"
+               android:onClick="onClickProfile" />
+
+           <Button
+               android:id="@+id/addCar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/btn_addCar"
+               android:visibility="gone"
+               android:onClick="onClickAddCar" />
+
+
+           <Button
+               android:id="@+id/cars"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/btn_cars"
+               android:onClick="onClickCars" />
+
+           <Button
+               android:id="@+id/about"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/btn_about"
+               android:onClick="onClickAbout" />
+           
+           <Button
+               android:id="@+id/logout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/btn_logout"
+               android:visibility="gone"
+               android:onClick="onClickLogout" />
+           
+           <TextView
+               android:id="@+id/informations"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:text="@string/textview_infos"
+               android:textStyle="bold" />
+           
+       </LinearLayout>
+
+</RelativeLayout>

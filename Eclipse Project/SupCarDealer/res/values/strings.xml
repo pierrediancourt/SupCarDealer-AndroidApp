@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SupCarDealer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_car">CarActivity</string>
+    <string name="title_activity_cars">CarsActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_add_car">AddCarActivity</string>
+    <string name="title_activity_edit_car">EditCarActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+	
+    <!-- Page d'accueil -->
+    <string name="btn_register">Inscription</string>
+    <string name="btn_login">Connexion</string>
+    <string name="btn_profile">Profil</string>
+    <string name="btn_addCar">Mettre en location</string>
+    <string name="btn_editCar">Modifier mes voitures</string>
+    <string name="btn_cars">Voir les voitures</string>
+    <string name="btn_about">A Propos</string>
+    <string name="btn_logout">Deconnexion</string>
+    <string name="textview_infos">Application créée par Rémi Parent, Léo Gualano, Anthony Laurent et Pierre Diancourt @SUPINFO 2013-2014</string>
+    <string name="main_page_title">Accueil</string>
+    
+    <!-- Page AddCar et EditCar -->
+    <string name="AddCar_page_title">Ajouter une voiture</string>
+    <string name="modele">Modèle</string>
+    <string name="seats">Nombre de sièges</string>
+    <string name="baggage">Stockage</string>
+    <string name="doors">Nom de portes</string>
+    <string name="kilometers">Kilomètres au compteur</string>
+    <string name="price">Prix à la journée</string>
+    <string name="automatic">Automatique</string>
+    <string name="manual">Manuelle</string>
+    <string name="clim_yes">Oui</string>
+    <string name="clim_no">Non</string>
+    <string name="submit">Submit</string>
+    <string name="gearbox">Boite de vitesse</string>
+    <string name="conditionnalAir">Air conditionné</string>
+    <string name="EditCar_page_title">Modifier une voiture</string>
+    
+    <!--  Page de login -->
+    <string name="btn_loginSubmit">Se connecter</string>
+    <string name="loginEmailLabel">Email :</string>
+    <string name="loginEmailField">Adresse e-mail</string>
+    <string name="loginPasswordLabel">Mot de passe :</string>
+    <string name="loginPasswordField">Saisir le mot de passe</string>
+    <string name="login_page_title">Connexion</string>
+    
+    <!-- Page du Register -->
+    <string name="btn_registerSubmit">S\'inscrire</string>
+    <string name="registerEmailLabel">Email :</string>
+    <string name="registerEmailField">Adresse e-mail</string>
+    <string name="registerFirstnameLabel">Prénom :</string>
+    <string name="registerFirstnameField">Saisir le prénom</string>
+    <string name="registerLastnameLabel">Nom :</string>
+    <string name="registerLastnameField">Saisir le nom</string>
+    <string name="registerPassword1Label">Mot de passe :</string>
+    <string name="registerPassword1Field">Saisir le mot de passe</string>
+    <string name="registerPassword2Label">Confirmation du mot de passe :</string>
+    <string name="registerPassword2Field">Saisir le mot de passe</string>
+    <string name="register_page_title">Inscription</string>
+    
+    <!-- Page du profil -->
+    <string name="btn_profileEdit">Editer le profil</string>
+    <string name="profileFirstnameLabel">Prénom : </string>
+    <string name="profileFirstnameValue"></string>
+    <string name="profileLastnameLabel">Nom : </string>
+    <string name="profileLastnameValue"></string>
+    <string name="profileEmailLabel">E-mail : </string>
+    <string name="profileEmailValue"></string>
+    <string name="profile_page_title">Profil de l\'utilisateur</string>
+
+    <!-- Page d'Edit Profile -->
+    <string name="btn_editProfileSubmit">Enregistrer</string>
+    <string name="editEmailLabel">Email :</string>
+    <string name="editEmailField">Adresse e-mail</string>
+    <string name="editFirstnameLabel">Prénom :</string>
+    <string name="editFirstnameField">Saisir le prénom</string>
+    <string name="editLastnameLabel">Nom :</string>
+    <string name="editLastnameField">Saisir le nom</string>
+    <string name="editPassword1Label">Ancien mot de passe :</string>
+    <string name="editPassword1Field">Saisir le mot de passe</string>
+    <string name="editPassword2Label">Nouveau mot de passe :</string>
+    <string name="editPassword2Field">Saisir le mot de passe</string>
+    <string name="editPassword3Label">Confirmation du mot de passe :</string>
+    <string name="editPassword3Field">Saisir le mot de passe</string>
+    <string name="editProfile_page_title">Modifier mon profil</string>
+    
+    <!-- Page Cars -->
+    <string name="cars_page_title">Nos voitures</string>
+    <string name="chooseCat">Choisissez les catégories voulues :</string>
+    <string name="btn_filterCars">Filtrer</string>
+    
+    <!-- Page About -->
+    <string name="about_page_content">Nous contacter :\nCampus de Supinfo\n59300 Valenciennes</string>
+    <string name="about_page_title">A Propos</string>
+    
+    <!-- Page Car (infos sur une voiture en particulier) -->
+    <string name="btnCarEdit">Modifier</string>
+    <string name="btnCarRent">Louer</string>
+    <string name="car_page_title">Information de la voiture :</string>
+    <string name="modeleValue"></string>
+    <string name="seatsValue"></string>
+    <string name="baggageValue"></string>
+    <string name="gearboxLabel">Boite de vitesse :</string>
+    <string name="gearboxValue"></string>
+    <string name="conditionnalAirLabel">Air conditionné :</string>
+    <string name="conditionnalAirValue"></string>
+    <string name="doorsValue"></string>
+    <string name="kilometersValue"></string>
+    <string name="priceValue"></string>
+    <string name="year">Année</string>
+    <string name="category">Catégorie</string>
+    <string name="dateField">jj/mm/aaaa</string>
+    <string name="startDateLabel">Date de début :</string>
+    <string name="endDateLabel">Date de fin :</string>
+    
+</resources>

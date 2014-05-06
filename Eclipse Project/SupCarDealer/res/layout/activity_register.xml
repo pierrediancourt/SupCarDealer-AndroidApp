@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity" >
+
+    <ScrollView
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+    	<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical" >
+           
+           <TextView
+               android:id="@+id/pageRegisterTitle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="top"
+               android:text="@string/register_page_title" 
+               android:textStyle="bold"
+               android:textSize="20sp"/>
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="20dp" />
+           
+           <TextView
+               android:id="@+id/registerEmailLabel"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:text="@string/registerEmailLabel"
+               android:textSize="20sp" />
+
+           <EditText
+               android:id="@+id/registerEmailField"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:hint="@string/registerEmailField"
+               android:inputType="textEmailAddress" >
+               <requestFocus />
+           </EditText>
+           
+           <TextView
+               android:id="@+id/registerFirstnameLabel"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:text="@string/registerFirstnameLabel"
+               android:textSize="20sp" />
+
+           <EditText
+               android:id="@+id/registerFirstnameField"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:hint="@string/registerFirstnameField"
+               android:inputType="textPersonName" >
+               <requestFocus />
+           </EditText>
+           
+           <TextView
+               android:id="@+id/registerLastnameLabel"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:text="@string/registerLastnameLabel"
+               android:textSize="20sp" />
+
+           <EditText
+               android:id="@+id/registerLastnameField"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:hint="@string/registerLastnameField"
+               android:inputType="textPersonName" >
+               <requestFocus />
+           </EditText>
+           
+           <TextView
+               android:id="@+id/registerPassword1Label"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:text="@string/registerPassword1Label"
+               android:textSize="20sp" />
+
+           <EditText
+               android:id="@+id/registerPassword1Field"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:hint="@string/registerPassword1Field"
+               android:inputType="textPassword" >
+               <requestFocus />
+           </EditText>
+           
+           <TextView
+               android:id="@+id/registerPassword2Label"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:text="@string/registerPassword2Label"
+               android:textSize="20sp" />
+
+           <EditText
+               android:id="@+id/registerPassword2Field"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:hint="@string/registerPassword2Field"
+               android:inputType="textPassword" >
+               <requestFocus />
+           </EditText>
+
+           <Button
+               android:id="@+id/registerSubmit"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/btn_registerSubmit"
+               android:onClick="onClickRegisterSubmit" />
+           
+       </LinearLayout>
+	</ScrollView>
+</RelativeLayout>

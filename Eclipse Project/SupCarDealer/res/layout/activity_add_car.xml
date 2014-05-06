@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    android:background="@android:color/white">
+
+    <ScrollView
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical" >
+           
+           <TextView
+               android:id="@+id/AddCar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="top"
+               android:text="@string/AddCar_page_title" 
+               android:textStyle="bold"
+               android:textSize="20sp"/>
+
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/modele" />
+           <EditText
+               android:id="@+id/modele"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="@string/modele"
+               android:ems="10" />
+           
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/year" />
+           <EditText
+               android:id="@+id/year"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="@string/year"
+               android:ems="10" />
+           
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/category" />
+           <Spinner
+			    android:id="@+id/categoriesList"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+           
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/seats" />
+           <EditText
+               android:id="@+id/seats"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="@string/seats"
+               android:ems="10" />
+           
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/baggage" />
+           <EditText
+               android:id="@+id/baggage"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="@string/baggage"
+               android:ems="10" />
+
+           <RadioGroup
+	        android:id="@+id/radioGearBox"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	        
+               <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/gearbox" />
+               
+	           <RadioButton
+	               android:id="@+id/automatic"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:text="@string/automatic" 
+	               android:checked="true" />
+	           
+	           <RadioButton
+	               android:id="@+id/manual"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:text="@string/manual" />
+           </RadioGroup>
+           
+           <RadioGroup
+               android:id="@+id/radioClim"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+	          
+                <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/conditionnalAir" />
+
+		           <RadioButton
+		               android:id="@+id/clim_yes"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:text="@string/clim_yes" 
+		               android:checked="true" />
+		           
+		           <RadioButton
+		               android:id="@+id/clim_no"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:text="@string/clim_no" />
+			</RadioGroup>
+			
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/doors" />
+           <EditText
+               android:id="@+id/doors"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="@string/doors"
+               android:ems="10" />
+           
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/kilometers" />
+           <EditText
+               android:id="@+id/kilometers"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="@string/kilometers"
+               android:ems="10" />
+           
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/price" />
+           <EditText
+               android:id="@+id/price"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="@string/price"
+               android:ems="10" />
+           
+           <Button
+	        android:id="@+id/btnSubmit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/submit"
+	        android:onClick="onClickAddCar" />
+           
+           <TextView
+               android:id="@+id/informations"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/textview_infos"
+               android:textStyle="bold" />
+       </LinearLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity" >
+
+    <ScrollView
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+	    <LinearLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:orientation="vertical" >
+	           
+	           <TextView
+	               android:id="@+id/pageEditTitle"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_gravity="top"
+	               android:text="@string/editProfile_page_title" 
+	               android:textStyle="bold"
+	               android:textSize="20sp"/>
+	           
+	           <View
+				  android:layout_width="1dp"
+				  android:layout_height="20dp" />
+	           
+	           <TextView
+	               android:id="@+id/editEmailLabel"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_gravity="bottom"
+	               android:text="@string/editEmailLabel"
+	               android:textSize="20sp" />
+	
+	           <EditText
+	               android:id="@+id/editEmailField"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:ems="10"
+	               android:hint="@string/editEmailField"
+	               android:inputType="textEmailAddress" >
+	               <requestFocus />
+	           </EditText>
+	           
+	           <TextView
+	               android:id="@+id/editFirstnameLabel"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_gravity="bottom"
+	               android:text="@string/editFirstnameLabel"
+	               android:textSize="20sp" />
+	
+	           <EditText
+	               android:id="@+id/editFirstnameField"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:ems="10"
+	               android:hint="@string/editFirstnameField"
+	               android:inputType="textPersonName" >
+	               <requestFocus />
+	           </EditText>
+	           
+	           <TextView
+	               android:id="@+id/editLastnameLabel"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_gravity="bottom"
+	               android:text="@string/editLastnameLabel"
+	               android:textSize="20sp" />
+	
+	           <EditText
+	               android:id="@+id/editLastnameField"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:ems="10"
+	               android:hint="@string/editLastnameField"
+	               android:inputType="textPersonName" >
+	               <requestFocus />
+	           </EditText>
+	           
+	           <TextView
+	               android:id="@+id/editPassword1Label"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_gravity="bottom"
+	               android:text="@string/editPassword1Label"
+	               android:textSize="20sp" />
+	
+	           <EditText
+	               android:id="@+id/editPassword1Field"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:ems="10"
+	               android:hint="@string/editPassword1Field"
+	               android:inputType="textPassword" >
+	               <requestFocus />
+	           </EditText>
+	           
+	           <TextView
+	               android:id="@+id/editPassword2Label"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_gravity="bottom"
+	               android:text="@string/editPassword2Label"
+	               android:textSize="20sp" />
+	
+	           <EditText
+	               android:id="@+id/editPassword2Field"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:ems="10"
+	               android:hint="@string/editPassword2Field"
+	               android:inputType="textPassword" >
+	               <requestFocus />
+	           </EditText>
+	           
+	           <TextView
+	               android:id="@+id/editPassword3Label"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_gravity="bottom"
+	               android:text="@string/editPassword3Label"
+	               android:textSize="20sp" />
+	
+	           <EditText
+	               android:id="@+id/editPassword3Field"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:ems="10"
+	               android:hint="@string/editPassword3Field"
+	               android:inputType="textPassword" >
+	               <requestFocus />
+	           </EditText>
+	
+	           <Button
+	               android:id="@+id/editSubmit"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:text="@string/btn_editProfileSubmit"
+	               android:onClick="onClickEditSubmit" />
+	           
+	       </LinearLayout>
+	</ScrollView>
+</RelativeLayout>

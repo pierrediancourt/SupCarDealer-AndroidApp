@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CarActivity" >
+
+    <ScrollView
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+           
+           <TextView
+               android:id="@+id/ViewCar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="top"
+               android:text="@string/car_page_title" 
+               android:textStyle="bold"
+               android:textSize="20sp"/>
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="30dp" />
+
+           <TextView
+                android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/modele" />
+
+           <TextView
+                android:id="@+id/modeleValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/modeleValue" />
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="10dp" />
+           
+           <TextView
+                android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/seats" />
+           
+           <TextView
+                android:id="@+id/seatsValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/seatsValue" />
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="10dp" />
+           
+           <TextView
+                android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/baggage" />
+           
+           <TextView
+                android:id="@+id/baggageValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/baggageValue" />
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="10dp" />
+
+           <TextView
+                android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/gearboxLabel" />
+           
+           <TextView
+                android:id="@+id/gearboxValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/gearboxValue" />
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="10dp" />
+           
+           <TextView
+                android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/conditionnalAirLabel" />
+           
+           <TextView
+                android:id="@+id/conditionnalAirValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/conditionnalAirValue" />
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="10dp" />
+			
+           <TextView 
+                android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/doors" />
+           
+           <TextView
+                android:id="@+id/doorsValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/doorsValue" />
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="10dp" />
+           
+           <TextView
+                android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/kilometers" />
+           
+           <TextView
+                android:id="@+id/kilometersValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/kilometersValue" />
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="10dp" />
+           <TextView
+             	android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/price" />
+           <TextView
+                android:id="@+id/priceValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/priceValue" />
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="10dp" />
+           <TextView
+                android:id="@+id/startDateLabel"
+                android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/startDateLabel" />
+           <EditText
+               android:id="@+id/startDate"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:hint="@string/dateField"
+               android:inputType="text|date" >
+               <requestFocus />
+           </EditText>
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="10dp" />
+           <TextView
+                android:id="@+id/endDateLabel"
+                android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/endDateLabel" />
+           <EditText
+               android:id="@+id/endDate"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:hint="@string/dateField"
+               android:inputType="text|date" >
+               <requestFocus />
+           </EditText>
+           
+           <View
+			  android:layout_width="1dp"
+			  android:layout_height="10dp" />
+           
+           <Button
+	          android:id="@+id/btnCarRent"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:onClick="onClickCarRent"
+	          android:text="@string/btnCarRent" />
+           
+          <Button
+	          android:id="@+id/btnCarEdit"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:onClick="onClickCarEdit"
+	          android:text="@string/btnCarEdit" />
+           
+       </LinearLayout>
+	</ScrollView>
+</RelativeLayout>
